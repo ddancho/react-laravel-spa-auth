@@ -30,17 +30,10 @@ export default function Topbar() {
 
   const handleLogout = () => {
     api()
-      .get("/sanctum/csrf-cookie")
+      .post("/logout")
       .then(() => {
-        api()
-          .post("/logout")
-          .then(() => {
-            dispatch(setUserInfo({}));
-            history.push("/");
-          })
-          .catch((err) => {
-            console.log(err);
-          });
+        dispatch(setUserInfo({}));
+        history.push("/");
       })
       .catch((err) => {
         console.log(err);
