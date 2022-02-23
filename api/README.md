@@ -1,4 +1,8 @@
-## Api
+## Api (Windows with WSL2)
+
+[Getting Started On Windows](https://laravel.com/docs/8.x/installation#getting-started-on-windows)
+
+## Api (Linux)
 
 The api backend was bootstrapped on linux mint as laravel docker containers with :
 
